@@ -3,9 +3,6 @@ body {
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
@@ -52,7 +49,6 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1;
 }
 
 h2 {
@@ -111,33 +107,6 @@ button:hover {
     background-color: #45a049;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer .social-links {
-    margin-top: 10px;
-}
-
-footer .social-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-footer .social-link:hover {
-    color: #4CAF50;
-}
-
 @media (max-width: 480px) {
     main {
         padding: 15px;
@@ -147,4 +116,11 @@ footer .social-link:hover {
         font-size: 1.5em;
     }
 
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
